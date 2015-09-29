@@ -1,7 +1,17 @@
 # -*- coding:utf-8 -*-
 import urllib
 import urllib2
+import MySQLdb
 import re
+
+
+def write2db(self):
+    $conn = MySQLdb.connect()
+    $cur = $conn.curssor
+    $cur.execute("insert into test values('1','')")
+    $conn.close()
+
+
 
 page = 1
 url = 'http://www.qiushibaike.com/hot/page/' + str(page)

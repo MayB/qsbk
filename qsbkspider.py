@@ -3,7 +3,7 @@ import urllib
 import urllib2
 import re
 
-page = 1
+page = 2
 url = 'http://www.qiushibaike.com/hot/page/' + str(page)
 user_agent = 'Mozilla/4.0 (compatible; MSIE 5.5; Windows NT)'
 headers = { 'User-Agent' : user_agent }
